@@ -435,35 +435,51 @@ button:hover {
 }
 
 .service-item .first-service-icon {
-    background-image: url(../images/first-white-icon.png);
+    background-image: url(../images/IITM.png);
 }
 
 .service-item:hover .first-service-icon {
-    background-image: url(../images/first-main-icon.png);
+    background-image: url(../images/IITM.png);
 }
 
 .service-item .second-service-icon {
-    background-image: url(../images/second-white-icon.png);
+    background-image: url(../images/RPI.png);
 }
 
 .service-item:hover .second-service-icon {
-    background-image: url(../images/second-main-icon.png);
+    background-image: url(../images/RPI.png);
 }
 
 .service-item .third-service-icon {
-    background-image: url(../images/third-white-icon.png);
+    background-image: url(../images/CV_icon.png);
 }
 
 .service-item:hover .third-service-icon {
-    background-image: url(../images/third-main-icon.png);
+    background-image: url(../images/CV_icon.png);
 }
 
 .service-item .fourth-service-icon {
-    background-image: url(../images/fourth-white-icon.png);
+    background-image: url(../images/gscholar.png);
 }
 
 .service-item:hover .fourth-service-icon {
-    background-image: url(../images/fourth-main-icon.png);
+    background-image: url(../images/gscholar.png);
+}
+
+.service-item .fifth-service-icon {
+    background-image: url(../images/research_icon.png);
+}
+
+.service-item:hover .fifth-service-icon {
+    background-image: url(../images/research_icon.png);
+}
+
+.service-item .sixth-service-icon {
+    background-image: url(../images/research_icon.png);
+}
+
+.service-item:hover .sixth-service-icon {
+    background-image: url(../images/research_icon.png);
 }
 
 
