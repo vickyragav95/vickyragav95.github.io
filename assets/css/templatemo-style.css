@@ -475,11 +475,19 @@ button:hover {
 }
 
 .service-item .sixth-service-icon {
-    background-image: url(../images/research_icon.png);
+    background-image: url(../images/resume_1pg.png);
 }
 
 .service-item:hover .sixth-service-icon {
-    background-image: url(../images/research_icon.png);
+    background-image: url(../images/resume_1pg.png);
+}
+
+.service-item .seventh-service-icon {
+    background-image: url(../images/cv_2pg.png);
+}
+
+.service-item:hover .seventh-service-icon {
+    background-image: url(../images/cv_2pg.png);
 }
 
 
