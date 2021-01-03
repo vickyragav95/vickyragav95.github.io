@@ -305,6 +305,12 @@ html {
     color: #000000;
 }
 
+.section-heading h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
 .section-heading .line-dec {
     width: 60px;
     height: 3px;
@@ -653,7 +659,8 @@ figure.snip1321.hover:after {
   opacity: 0.9;
 }
 
-
+#more1 {display: none;}
+#more2 {display: none;}
 /* Contact Me */
 
 section.contact-me {
