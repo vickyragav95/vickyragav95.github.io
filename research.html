@@ -77,12 +77,102 @@ https://templatemo.com/tm-531-reflux
       <section id="section1" class="section pumi-mbbl" data-section="section1">
         <div class="container">
           <div class="section-heading">
-            <h2>PUMI-MBBL Mesh Library</h2>
+            <h2>MBBL Mesh For PIC</h2>
             <div class="line-dec"></div>
-            <span
-              >Details will be added soon</span
+            <p
+              >As the primary objective to my doctoral research, I was tasked with developing an anisotropic structured mesh library
+              for hPIC & hPIC2, large scale electrostatic PIC codes targetting plasma material interaction simulations in fusion tokamaks.
+              By default, the PIC code employs a structured uniform mesh for PIC simulations which is an ideal choice considering the
+              trivial and highly efficient PIC operations on such grids. Howvere, the grid sizing in a such meshes is constrained by the
+              requirements in high-gradient regions of the plasma domain. The developed block-structured anisotropic mesh, titled Multi-Block
+              Boundary Layer (MBBL) mesh, offers variable grid-sizing and is also implemented as a fully implicit (stored with minimal memory
+              footprint in the order of few kilobytes) mesh. Additionaly, the MBBL library provides all the PIC capabilitites of uniform grids
+              with insignificant additional performance overheads (~ 10% slower) compared to savings it offers (> 100x element count
+              reduction and >30x runtime reduction).</p
+              >
+             <p
+              >The MBBL mesh library (<a href="https://github.com/SCOREC/pumiMBBL/tree/CPU">PUMImbbl</a>) and implemented MBBL algorithms was originally developed in C programming language for the
+              (MPI based) CPU-only parallel PIC code hPIC. A hybrid CPU/GPU-performant version of the MBBL mesh library, <a href="https://github.com/SCOREC/pumiMBBL">PUMImbbl-GPU</a>, was later
+              developed using Kokkos C++ performance portability framework and integrated with hPIC2 (an extension of hPIC with hybrid CPU/GPU
+              parallel execution). </p>
+
+              <p> Capabilities to perform PIC simulations in complex 2D domains (non-convex rectilinear domains) are also added
+              to the MBBL library. Special boundary tracking and trajectory intersection algorithms have been implemented for non-convex domains,
+              thus extending the scope of domains covered by hPIC2 beyond regular rectangular domains. Currently field-solve related developments
+              on non-convex domains are underway currently underway. </p>
+
+              <p> NOTE: Both hPIC and hPIC2 are private repositories developed by <a href="https://github.com/lcpp-org"> Laboratory of Computational Plasma Physics</a> at University  of
+              Illinois at Urbana-Champaign. Please contact the owner of the repos <a href="https://npre.illinois.edu/people/profile/dcurreli">Dr. Davide Curelli</a> for more information regarding the softwares</p>
             >
           </div>
+
+          <div class="right-image">
+            <img src="assets/images/MBBL-1D-results.png" alt="" />
+          </div>
+
+          <div class="line-dec"></div>
+          <hr>
+
+          <div class="left-image-post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-text">
+                  <h2 style="color:Maroon; font-weight:bold;"> Two Stream Instability Simulations </h2>
+                  <p > Vortices in phase-space forms due to interactions between electron beams initialized with opposite velocities.
+                  Validation tests conducted on non-uniform MBBL meshes confirms growth rates based on linear theory and compares well
+                  with standard uniform meshes. </p >
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/2SI-PS-evoln.gif" alt="" />
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="left-image-post">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-image">
+              <img src="assets/images/Energy_Evolution.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="right-image">
+                  <img src="assets/images/twostream_hPIC_M0M1.png" alt="" />
+              </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="line-dec"></div>
+      <hr>
+
+      <div class="right-image">
+        <img src="assets/images/mesh-hpic-vs-pumi.png" alt="" />
+      </div>
+      <div class="right-image">
+        <img src="assets/images/phi-hpic-vs-pumiuni.png" alt="" />
+      </div>
+
+      <div class="line-dec"></div>
+      <hr>
+
+      <div class="right-image">
+        <img src="assets/images/part-track-header.png" alt="" />
+      </div>
+      <div class="left-image-post">
+
+        <div class="left-image">
+        <img src="assets/images/Step_NW.gif" alt="" />
+        </div>
+
+        <div class="right-image">
+            <img src="assets/images/TileGap_SE.gif" alt="" />
+        </div>
+
+    </div>
+
         </div>
       </section>
 
